@@ -1,0 +1,6 @@
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${template.placeholder @ isEmpty=!properties.text}"/>
+
+<sly data-sly-test="${properties.text}">
+    <h3>Text entered by the user is: ${properties.text}</h3>
+</sly>

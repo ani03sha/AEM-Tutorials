@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          jcr:primaryType="cq:Template">
+    <jcr:content
+            cq:lastModified="{Date}2020-07-06T01:09:11.947+05:30"
+            cq:lastModifiedBy="admin"
+            cq:templateType="/conf/aemtutorials/settings/wcm/template-types/base-page"
+            jcr:description="This is the base template for the AEM Tutorials website"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="Base Template"
+            status="enabled"/>
+</jcr:root>

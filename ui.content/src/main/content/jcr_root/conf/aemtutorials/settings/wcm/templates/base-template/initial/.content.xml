@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:lastModified="{Date}2020-07-06T01:01:48.102+05:30"
+            cq:lastModifiedBy="admin"
+            cq:template="/conf/aemtutorials/settings/wcm/templates/base-template"
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="aemtutorials/components/structure/page">
+        <root
+                jcr:lastModified="{Date}2020-07-06T00:00:22.773+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+    </jcr:content>
+</jcr:root>
