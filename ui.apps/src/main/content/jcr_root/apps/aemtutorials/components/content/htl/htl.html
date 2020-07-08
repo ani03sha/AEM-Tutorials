@@ -1,0 +1,59 @@
+<h1>HTL Code Snippets</h1>
+
+
+<h2><u>Example 1:</u></h2>
+<h3>Title of the page is: ${currentPage.title}</h3>
+
+
+<h2><u>Example 2:</u></h2>
+<h3>Sling Resource Type property of the component node: ${properties.sling:resourceType}</h3>
+
+
+<h2><u>Example 3:</u></h2>
+<h3>Array join: ${['Batman', 'Superman', 'Flash'] @ join='-'}</h3>
+
+
+<h2><u>Example 4:</u></h2>
+<sly data-sly-test="${wcmmode.edit}">
+    <h3>We are in the edit mode</h3>
+</sly>
+<sly data-sly-test="${wcmmode.preview}">
+    <h3>We are in the preview mode</h3>
+</sly>
+
+
+<h2><u>Example 5:</u></h2>
+<sly data-sly-list="${currentPage.parent.listChildren}">
+    <ul>
+        <li>
+            <h3>${item.title}</h3>
+        </li>
+    </ul>
+</sly>
+
+
+<h2><u>Example 6:</u></h2>
+<h3 data-sly-text="${currentPage.title}">This text will be replaced.</h3>
+
+
+<h2><u>Example 7:</u></h2>
+<h3 data-sly-attribute.title=${currentPage.title}>Attributes are set for this element</h3>
+
+
+<h2><u>Example 8:</u></h2>
+<h3 data-sly-repeat="${currentPage.parent.listChildren}">${item.name}</h3>
+
+
+<h2><u>Example 9:</u></h2>
+<div data-sly-resource="${'text' @ resourceType='aemtutorials/components/content/text'}"></div>
+
+
+<h2><u>Example 10:</u></h2>
+<sly data-sly-include="index.html"/>
+
+
+<h2><u>Example 11:</u></h2>
+<sly data-sly-template.object>
+    This can be called by using 'call'
+</sly>
+<h3 data-sly-call="${object}"></h3>
