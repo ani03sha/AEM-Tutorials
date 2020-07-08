@@ -1,0 +1,6 @@
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${template.placeholder @ isEmpty=!properties.image}"/>
+
+<sly data-sly-test="${properties.imageRef || properties.altText}">
+    <img src="${properties.imageRef}" alt="${properties.altText}"/>
+</sly>
