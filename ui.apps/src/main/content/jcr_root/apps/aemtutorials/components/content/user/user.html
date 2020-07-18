@@ -1,0 +1,10 @@
+<sly data-sly-use.user="org.redquark.aem.tutorials.core.models.User"></sly>
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"></sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=!user.name}"></sly>
+
+<div data-sly-test="${user.id}">
+    <h3 data-sly-test="${user.id}">ID: ${user.id}</h3>
+    <h3 data-sly-test="${user.name}">Name: ${user.name}</h3>
+    <h3 data-sly-test="${user.gender}">Gender: ${user.gender}</h3>
+    <h3 data-sly-test="${user.address}">Address: ${user.address}</h3>
+</div>
