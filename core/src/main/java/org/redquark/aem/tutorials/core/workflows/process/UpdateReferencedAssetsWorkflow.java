@@ -36,6 +36,7 @@ public class UpdateReferencedAssetsWorkflow implements WorkflowProcess {
     protected static final String PROCESS_LABEL_VALUE = "Update Referenced Asset";
     private static final String TAG = UpdateReferencedAssetsWorkflow.class.getSimpleName();
     private static final Logger LOGGER = LoggerFactory.getLogger(UpdateReferencedAssetsWorkflow.class);
+
     @Reference
     ReferencedAssetService referencedAssetService;
 

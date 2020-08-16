@@ -19,4 +19,10 @@ public final class AppConstants {
 
     // Workflow Process Label
     public static final String PROCESS_LABEL = "process.label";
+    // Workflow Chooser Label
+    public static final String CHOOSER_LABEL = "chooser.label";
+
+    // User groups
+    public static final String ADMINISTRATORS = "administrators";
+    public static final String CONTENT_AUTHORS = "content-authors";
 }
