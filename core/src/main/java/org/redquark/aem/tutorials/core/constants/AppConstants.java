@@ -21,6 +21,8 @@ public final class AppConstants {
     public static final String PROCESS_LABEL = "process.label";
     // Workflow Chooser Label
     public static final String CHOOSER_LABEL = "chooser.label";
+    // Child page count
+    public static final String CHILD_PAGE_COUNT = "childPageCount";
 
     // User groups
     public static final String ADMINISTRATORS = "administrators";
