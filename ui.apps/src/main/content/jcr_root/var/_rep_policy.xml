@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:crx="http://www.day.com/crx/1.0" xmlns:rep="internal"
+          jcr:primaryType="rep:ACL">
+    <deny
+            jcr:primaryType="rep:DenyACE"
+            rep:principalName="everyone"
+            rep:privileges="{Name}[jcr:all]"/>
+    <allow1
+            jcr:primaryType="rep:GrantACE"
+            rep:principalName="workflow-process-service"
+            rep:privileges="{Name}[jcr:versionManagement,jcr:read,crx:replicate,rep:write,jcr:lockManagement]"/>
+    <allow2
+            jcr:primaryType="rep:GrantACE"
+            rep:principalName="undo-service"
+            rep:privileges="{Name}[jcr:write,jcr:read]">
+        <rep:restrictions
+                jcr:primaryType="rep:Restrictions"
+                rep:glob="/undo"/>
+    </allow2>
+    <allow3
+            jcr:primaryType="rep:GrantACE"
+            rep:principalName="communities-user-admin"
+            rep:privileges="{Name}[jcr:read]"/>
+</jcr:root>
