@@ -46,7 +46,7 @@ public @interface WorkflowStatusConfiguration {
     String toEmail() default DEFAULT_EMAIL_ADDRESS;
 
     @AttributeDefinition(
-            name = "To Email",
+            name = "Cc Email",
             description = "Enter the email address of recipient in CC field",
             type = AttributeType.STRING
     )
