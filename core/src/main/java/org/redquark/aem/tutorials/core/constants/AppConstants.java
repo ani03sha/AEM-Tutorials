@@ -9,6 +9,7 @@ public final class AppConstants {
 
     public static final String FORWARD_SLASH = "/";
     public static final String EQUALS = "=";
+    public static final String NEW_LINE = "\n";
 
     // TO-DO related constants
     public static final String TODO_ENDPOINT = "https://jsonplaceholder.typicode.com/todos/";
