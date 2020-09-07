@@ -28,4 +28,14 @@ public final class AppConstants {
     // User groups
     public static final String ADMINISTRATORS = "administrators";
     public static final String CONTENT_AUTHORS = "content-authors";
+
+    // Dynamic datasource
+    public static final String DATASOURCE = "datasource";
+    public static final String DROPDOWN_SELECTOR = "dropdownSelector";
+    public static final String COUNTRY_LIST = "countryList";
+    public static final String COUNTRY_LIST_PATH = "/content/dam/aemtutorials/country.json";
+    public static final String COLOR_LIST = "colorList";
+    public static final String COLOR_LIST_PATH = "/content/dam/aemtutorials/color.json";
+    public static final String FONT_LIST = "fontList";
+    public static final String FONT_LIST_PATH = "/content/dam/aemtutorials/font.json";
 }

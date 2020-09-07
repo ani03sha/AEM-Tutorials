@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Preferences"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <preferences
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Preferences"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                        margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <name
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Enter user name"
+                                    fieldLabel="Name"
+                                    name="./name"
+                                    useFixedInlineToolbar="{Boolean}true"/>
+                            <country
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldDescription="Select user's country"
+                                    fieldLabel="Country"
+                                    name="./country"
+                                    useFixedInlineToolbar="{Boolean}true">
+                                <datasource
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/apps/aemtutorials/dropdowns"
+                                        dropdownSelector="countryList"/>
+                            </country>
+                            <color
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldDescription="Select user's favorite color"
+                                    fieldLabel="Color"
+                                    name="./color"
+                                    useFixedInlineToolbar="{Boolean}true">
+                                <datasource
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/apps/aemtutorials/dropdowns"
+                                        dropdownSelector="colorList"/>
+                            </color>
+                            <font
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldDescription="Select user's font"
+                                    fieldLabel="Font"
+                                    name="./font"
+                                    useFixedInlineToolbar="{Boolean}true">
+                                <datasource
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/apps/aemtutorials/dropdowns"
+                                        dropdownSelector="fontList"/>
+                            </font>
+                        </items>
+                    </column>
+                </items>
+            </preferences>
+        </items>
+    </content>
+</jcr:root>

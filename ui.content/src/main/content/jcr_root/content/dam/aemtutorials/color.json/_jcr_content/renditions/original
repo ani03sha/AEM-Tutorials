@@ -1,0 +1,14 @@
+[
+    {
+        "text" : "Red",
+        "value": "#FF0000"
+    },
+    {
+        "text" : "Blue",
+        "value": "#0000FF"
+    },
+    {
+        "text" : "Green",
+        "value": "#008000"
+    }
+]

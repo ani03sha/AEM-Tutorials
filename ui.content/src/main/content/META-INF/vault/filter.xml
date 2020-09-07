@@ -4,4 +4,5 @@
     <filter root="/content/aemtutorials" mode="merge"/>
     <filter root="/content/dam/aemtutorials" mode="merge"/>
     <filter root="/content/experience-fragments/aemtutorials" mode="merge"/>
+    <filter root="/var/workflow/models/aemtutorials" mode="merge"/>
 </workspaceFilter>
