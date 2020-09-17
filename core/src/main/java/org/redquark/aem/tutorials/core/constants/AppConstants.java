@@ -38,4 +38,6 @@ public final class AppConstants {
     public static final String COLOR_LIST_PATH = "/content/dam/aemtutorials/color.json";
     public static final String FONT_LIST = "fontList";
     public static final String FONT_LIST_PATH = "/content/dam/aemtutorials/font.json";
+
+    public static final String PAGE_REPLICATION_TOPIC = "aemtutorials/replication/job";
 }

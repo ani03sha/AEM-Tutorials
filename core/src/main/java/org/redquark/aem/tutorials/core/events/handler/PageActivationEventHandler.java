@@ -25,14 +25,14 @@ import static org.redquark.aem.tutorials.core.constants.AppConstants.EQUALS;
         immediate = true,
         service = EventHandler.class,
         property = {
-                Constants.SERVICE_DESCRIPTION + "= This event handler listens the events on page activation",
+                Constants.SERVICE_DESCRIPTION + "= This event handler listens to the events on page activation",
                 EventConstants.EVENT_TOPIC + EQUALS + ReplicationAction.EVENT_TOPIC
         }
 )
-public class PageActivationEvenHandler implements EventHandler {
+public class PageActivationEventHandler implements EventHandler {
 
-    private static final String TAG = PageActivationEvenHandler.class.getSimpleName();
-    private static final Logger LOGGER = LoggerFactory.getLogger(PageActivationEvenHandler.class);
+    private static final String TAG = PageActivationEventHandler.class.getSimpleName();
+    private static final Logger LOGGER = LoggerFactory.getLogger(PageActivationEventHandler.class);
 
     @Reference
     ResourceResolverService resourceResolverService;
