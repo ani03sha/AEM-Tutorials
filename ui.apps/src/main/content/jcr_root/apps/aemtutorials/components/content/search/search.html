@@ -1,0 +1,7 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"></sly>
+<sly data-sly-call="${clientlib.all @ categories='aemtutorials.search'}"></sly>
+
+<form id="fulltext-search" action="/bin/aemtutorials/search" method="POST" accept-charset="UTF-8">
+    <input type="text" id="keyword" class="textbox" name="keyword">
+    <input title="Search" value="Search" type="submit" class="button">
+</form>
