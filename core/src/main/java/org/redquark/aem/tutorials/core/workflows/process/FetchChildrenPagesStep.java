@@ -70,7 +70,7 @@ public class FetchChildrenPagesStep implements WorkflowProcess {
             final Page child = pageIterator.next();
             // Check if the current child also has children
             if (child.listChildren() != null) {
-                getChildrenPagesCount(child, count);
+                count += getChildrenPagesCount(child, count);
             }
             count++;
         }
